@@ -1,0 +1,406 @@
+
+[monospace] {
+	font-family: monospace !important;
+}
+
+[bold] {
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	word-wrap: break-word;
+    text-align: center;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+	color: #c4bffd;
+	font-size: 32px;
+	font-weight: 900;
+}
+
+h2 {
+    font-style: oblique;
+    text-transform: uppercase;
+    text-shadow: -1px 1px 4px #000c;
+}
+
+h3 {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h1 > img {
+	margin-left: -8px;
+}
+
+h4 {
+	opacity: .7;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p, h5 {
+    font-weight: 300;
+	font-size: 14px;
+}
+
+h6 {
+	color: #c4bffd;
+	font-size: 24px;
+	font-weight: 300;
+    text-shadow: 0px 0px 5px #06040f;
+}
+
+li {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f0f0f000, #0049ce, #f0f0f000);
+    background-image: -moz-linear-gradient(left, #f0f0f000, #0049ce, #f0f0f000);
+    background-image: -ms-linear-gradient(left, #f0f0f000, #0049ce, #f0f0f000);
+    background-image: -o-linear-gradient(left, #f0f0f000, #0049ce, #f0f0f000);
+    margin: 10px 0px 20px 0px !important;
+}
+
+body {
+	background: #000;
+	background-image: url(../images/mushrooms.jpg?v=2);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+body.airdrop {
+	background-image: url(../images/bamboo.jpg?v=2);
+	background-attachment: scroll;
+}
+
+body.presale {
+	background-image: url(../images/narnia.jpg?v=2);
+	background-attachment: scroll;
+}
+
+body { padding: 0px 16px 8px 16px; }
+
+b { font-weight: 700; color: #ffa56c !important; }
+a { font-weight: 700; color: #ffa56c !important; }
+
+.container:not(:first-child) { 
+	margin-top: 32px;
+}
+.container:not(#hero) {
+	width: 100%;
+	max-width: 800px;
+	min-width: 260px;
+	border-radius: 0px;
+	padding: 8px;
+	margin: 8px auto;
+	/*box-shadow: 0px 5px 25px -10px #000;
+	background: #000c;
+	backdrop-filter: blur(25px) saturate(160%) contrast(45%);*/
+}
+
+	.container .sub {
+		border-radius: 0px;
+		padding: 16px;
+	}
+	
+	.container .sub:not(:first-child) {
+		margin-top: 8px;
+	}
+    
+    .sub.left > * {
+        text-align: left !important;
+    }
+
+#hero { box-shadow: none; }
+
+#hero img { max-width: 300px; margin: 64px auto; display: block; }
+
+[highlight] { color: red !important; }
+
+header {
+    left: 0px;
+    background: #03000f;
+    height: 100px;
+    display: block;
+    width: 100%;
+    z-index: 100;
+}
+
+header.fixed {
+    opacity: 0.9;
+    position: absolute;
+    top: 0px;
+    box-shadow: inset 0px -1px 3px -2px #fff8, inset 0px 2px 3px #000;
+}
+
+header:not(.fixed) {
+    position: fixed;
+    top: -120px;
+    opacity: 0;
+    box-shadow: 0px 2px 8px #000c, inset 0px -1px 3px -2px #fff8, inset 0px 2px 3px #000;
+    transition: top 0.5s, opacity 1s;
+}
+header.shown:not(.fixed) {
+    opacity: 1;
+    top: 0px !important;
+}
+
+header div {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding: 20px 20px !important;
+}
+
+header div > img {
+    height: 60px;
+}
+
+header div > a {
+    display: inline-block;
+    height: 40px;
+    padding: 10px 10px;
+    background: #03000f;
+    float: right;
+    margin-top: 10px;
+    border-left: thin solid #8b485a;
+    color: #d3d0de !important;
+    text-decoration: none !important;
+    transition: text-shadow 0.2s;
+}
+
+header div > a:hover {
+    text-shadow: 0px 0px 5px #fffa;
+}
+
+header div > a:last-child {
+    border-left: none;
+}
+
+input {
+    background: #000c;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    width: 100%;
+    max-width: 340px;
+    text-align: center;
+}
+
+input[type="number"] {
+	background: transparent;
+	padding: 16px;
+	border: none;
+	border-bottom: 2px solid #ccc;
+	font-size: 32px;
+	width: 100%;
+	color: #fff;
+	font-weight: 900;
+	transition: border-color 1s;
+	background-image: url("../images/bnb.png");
+	background-size: 48px 48px;
+	background-position: right center;
+	background-repeat: no-repeat;
+}
+
+input[type="number"]:focus {
+	border-color: red;
+	outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button, [button] {
+	margin-top: 16px;
+	border-radius: 6px;
+	border: 2px solid #ff7154;
+	background: linear-gradient(0deg, #fd3537, #f79566);
+	color: #fff !important;
+	width: auto;
+	padding: 12px 16px;
+	font-size: 12px;
+	font-weight: 700;
+	outline: none;
+	transition: opacity 0.2s;
+	cursor: pointer !important;
+	margin-left: 4px;
+	margin-right: 4px;
+	display: inline-block;
+	text-decoration: none;
+    box-shadow: 0px 3px 16px -4px #000c;
+}
+
+button:hover, [button]:hover { opacity: .8 }
+
+td > button {
+	font-size: 12px !important;
+	padding: 8px 4px !important;
+	margin: 0 !important;
+	border-radius: 4px !important;
+}
+
+table {
+	font-size: 12px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border: 1px solid #000;
+	border-radius: 0;
+}
+table thead th:first-child {
+	border-top-left-radius: 0;
+}
+table thead th:last-child {
+	border-top-right-radius: 0;
+}
+table tr:last-child td:first-child {
+	border-bottom-left-radius: 0;
+}
+table tr:last-child td:last-child {
+	border-bottom-right-radius: 0;
+}
+table, table > *, table > * > * {
+	width: 100%;
+}
+th { height: 30px; background-color: #111; font-size: 11px}
+td { height: 28px; border: 1px solid #000; text-align: center; padding: 8px; vertical-align: middle }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #fffc;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 8px;
+}
+
+/* Container around content */
+.tcontainer {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.tcontainer::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: #161445;
+  border: 4px solid #5c5bb5;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #0b0c21;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #0b0c21;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #0b0c21;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #0b0c21 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -12px;
+}
+
+/* The actual content */
+.content {
+  padding: 16px;
+  background-color: #0b0c21;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 28px;
+  }
+
+/* Full-width containers */
+  .tcontainer {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .tcontainer::before {
+    left: 60px;
+    border: medium solid #0b0c21;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #0b0c21 transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
